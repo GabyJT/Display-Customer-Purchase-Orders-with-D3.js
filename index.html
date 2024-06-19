@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive D3.js Divs</title>
+    <!-- Include D3.js library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Link to external JavaScript file -->
+    <script defer src="script.js"></script>
+    <!-- Define CSS for data point div elements -->
+    <style>
+        .data-point {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 5px;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive D3.js Divs</h1>
+    <!-- Container for the data points -->
+    <div id="data-container"></div>
+</body>
+</html>
