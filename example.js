@@ -2,10 +2,14 @@
 document.addEventListener('DOMContentLoaded', main);
 
 function main() {
-    // d3 code goes here
-    d3.dsv('data/purchase_orders.csv').then(function(data) {
+    console.log('DOM fully loaded and parsed');
+
+    // Load data from the CSV file
+    d3.csv('data/purchase_orders.csv').then(function(data) {
+        console.log('Data loaded successfully:', data);
+
         // Select the unordered list element
-        var ul = d3.select('#purchaseOrders_list');
+        var ul = d3.select('#purchaseOrders_storage');
 
         // Bind data to the list items and create new list items for each data entry
         ul.selectAll('li')
